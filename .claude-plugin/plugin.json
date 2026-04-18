@@ -1,0 +1,9 @@
+{
+  "name": "kb-for-agents",
+  "version": "0.1.0",
+  "description": "Three-layer knowledge base pattern (sources, summaries, indexes) as installable skills and commands. Progressive-disclosure navigation for agents over codebases and notes archives.",
+  "author": {
+    "name": "Oleg Gaidukov",
+    "email": "ogaidukov@gmail.com"
+  }
+}
