@@ -12,7 +12,7 @@ A Claude Code plugin that packages the three-layer knowledge base pattern as ins
 ## Install
 
 ```
-/plugin marketplace add ogaidukov/kb-for-agents
+/plugin marketplace add olegvg/kb-for-agents
 /plugin install kb-for-agents@kb-for-agents
 ```
 
