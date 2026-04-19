@@ -1,6 +1,8 @@
 # kb-for-agents
 
-A Claude Code plugin that packages the three-layer knowledge base pattern as installable skills and slash commands. Point it at a codebase or notes archive and get the progressive-disclosure workflow described in [Knowledge Base for Agents](https://olegvg.com/articles/knowledge-base-for-agents-karpathy-en).
+[Русская версия](README.ru.md)
+
+A Claude Code plugin that packages the three-layer knowledge base pattern as installable skills and slash commands. Point it at a codebase or notes archive and get the progressive-disclosure workflow described in [Knowledge Base for Agents](https://www.linkedin.com/posts/ahaidukof_karpathy-%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BB-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D0%BC%D1%8B-%D0%BD%D0%B0%D1%89%D1%83%D0%BF%D0%B0%D0%BB%D0%B8-activity-7446836637143130112-o920/).
 
 ## What's inside
 
