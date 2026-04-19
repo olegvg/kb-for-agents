@@ -3,3 +3,7 @@
 *.swo
 .idea/
 .vscode/
+
+# benchmark fresh runs (only .gitkeep is tracked)
+benchmarks/*/runs/*
+!benchmarks/*/runs/.gitkeep
