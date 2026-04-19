@@ -6,8 +6,8 @@ A Claude Code plugin that packages the three-layer knowledge base pattern as ins
 
 ## What's inside
 
-- **Skills** — `kb-ingest`, `kb-query`, `kb-lint`, `kb-check-drift`, `kb-distill`. The pattern codified.
-- **Commands** — `/kb-ingest`, `/kb-query`, `/kb-lint`, `/kb-check-drift`, `/kb-distill`. Thin wrappers over the skills.
+- **Skills** — `kb-ingest`, `kb-query`, `kb-lint`, `kb-check-drift`, `kb-distill`, `kb-demo`, `kb-bench`. The pattern codified.
+- **Commands** — `/kb-ingest`, `/kb-query`, `/kb-lint`, `/kb-check-drift`, `/kb-distill`, `/kb-demo`, `/kb-bench`. Thin wrappers over the skills.
 - **Templates** — starter shapes for indexes, summaries, decisions, `_root.md`, state. See [templates/README.md](templates/README.md) for manual-build steps.
 - **Docs** — pattern rationale: [concept](docs/concept.md), [navigation rules](docs/navigation-rules.md), [lint strategy](docs/lint-strategy.md).
 
@@ -19,6 +19,27 @@ A Claude Code plugin that packages the three-layer knowledge base pattern as ins
 ```
 
 ## Quickstart
+
+### Try it without setup
+
+After installing the plugin, run:
+
+`/kb-demo`
+
+This opens a 5-option menu against a built-in 150-note synthetic corpus
+in `examples/notes-corpus/`. You can inspect the structure, ask
+questions through the KB, compare against a grep-only baseline, rebuild
+the KB from scratch, or run the full benchmark suite.
+
+For honest comparison numbers on fixed tasks:
+
+`/kb-bench`
+
+Runs the 10 benchmark questions in two modes (with KB / grep-only) and
+prints a side-by-side table. Reference traces in
+`benchmarks/notes-corpus/traces/` are the calibrated baseline.
+
+### Apply to your own corpus
 
 In any Claude Code session opened at your corpus root:
 
