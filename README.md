@@ -13,10 +13,27 @@ A Claude Code plugin that packages the three-layer knowledge base pattern as ins
 
 ## Install
 
+### Claude Code (full plugin)
+
 ```
 /plugin marketplace add olegvg/kb-for-agents
 /plugin install kb-for-agents@kb-for-agents
 ```
+
+Installs every skill and slash command, including the demo and benchmark against the bundled notes-corpus.
+
+### Claude Desktop (individual skills)
+
+Claude Desktop doesn't load Claude Code plugins, so runtime skills are published as individual zips on the [Releases page](https://github.com/olegvg/kb-for-agents/releases). Download and upload the ones you need via the Claude Desktop skill UI:
+
+- `kb-ingest-<version>.zip`
+- `kb-query-<version>.zip`
+- `kb-lint-<version>.zip`
+- `kb-check-drift-<version>.zip`
+
+`SHA256SUMS` is attached to each release — verify with `sha256sum -c SHA256SUMS`.
+
+`kb-distill`, `kb-demo`, and `kb-bench` are Claude Code–only: distill relies on the plan-document layout, and demo/bench depend on the bundled notes-corpus.
 
 ## Quickstart
 

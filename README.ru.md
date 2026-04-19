@@ -13,10 +13,27 @@
 
 ## Установка
 
+### Claude Code (плагин целиком)
+
 ```
 /plugin marketplace add olegvg/kb-for-agents
 /plugin install kb-for-agents@kb-for-agents
 ```
+
+Ставит все навыки и слэш-команды, включая демо и бенчмарк на встроенном notes-corpus.
+
+### Claude Desktop (отдельные навыки)
+
+Claude Desktop не загружает плагины Claude Code, поэтому runtime-навыки выкладываются отдельными zip-архивами на странице [Releases](https://github.com/olegvg/kb-for-agents/releases). Скачай нужные и загрузи через UI навыков Claude Desktop:
+
+- `kb-ingest-<version>.zip`
+- `kb-query-<version>.zip`
+- `kb-lint-<version>.zip`
+- `kb-check-drift-<version>.zip`
+
+К каждому релизу приложен `SHA256SUMS` — проверка через `sha256sum -c SHA256SUMS`.
+
+`kb-distill`, `kb-demo` и `kb-bench` — только для Claude Code: distill опирается на формат plan-документов, demo/bench зависят от встроенного notes-corpus.
 
 ## Быстрый старт
 
