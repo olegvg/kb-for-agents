@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A Claude Code plugin — **markdown only, no build system, no test suite, no package manager**. The deliverable is a set of skills, commands, templates, and docs. "Running" this repo means installing it as a plugin and invoking its slash commands against a target corpus.
+A Claude Code and Codex plugin — **markdown only, no build system, no test suite, no package manager**. The deliverable is a set of skills, commands, templates, and docs. "Running" this repo means installing it as a plugin and invoking its skills or slash commands against a target corpus.
 
 Install locally to dogfood changes:
 
@@ -29,7 +29,8 @@ Why three layers: progressive disclosure. See [docs/concept.md](docs/concept.md)
 
 ## Repo layout
 
-- `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` — plugin and self-hosted marketplace manifests. Version bumps go here.
+- `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` — Claude Code plugin and self-hosted marketplace manifests. Version bumps go here.
+- `.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json` — Codex plugin and self-hosted marketplace manifests. Keep metadata in sync with the Claude manifests.
 - `skills/<name>/SKILL.md` — each skill is a single markdown file with YAML frontmatter (`name`, `description`). The `description` field is what Claude Code matches against to auto-invoke the skill; it must include trigger phrases (English + Russian in this repo).
 - `commands/<name>.md` — thin slash-command wrappers. Each one is essentially `Invoke the <name> skill with $ARGUMENTS`. Do not duplicate skill logic into the command file.
 - `templates/` — starter shapes for `_root.md`, area indexes, summaries, decisions. Referenced by the skills. Users can also hand-copy them (see [templates/README.md](templates/README.md)).

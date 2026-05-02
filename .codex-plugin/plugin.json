@@ -1,0 +1,45 @@
+{
+  "name": "kb-for-agents",
+  "version": "0.3.0",
+  "description": "Three-layer knowledge base pattern as installable Codex skills. Progressive-disclosure navigation for agents over codebases and notes archives.",
+  "author": {
+    "name": "Oleg Gaidukov",
+    "email": "ogaidukov@gmail.com",
+    "url": "https://github.com/olegvg"
+  },
+  "homepage": "https://github.com/olegvg/kb-for-agents",
+  "repository": "https://github.com/olegvg/kb-for-agents",
+  "license": "MIT",
+  "keywords": [
+    "knowledge-base",
+    "agents",
+    "skills",
+    "documentation",
+    "progressive-disclosure",
+    "context-management",
+    "codebase-navigation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "KB for Agents",
+    "shortDescription": "Three-layer knowledge bases for agent navigation",
+    "longDescription": "Build, query, lint, and maintain a three-layer knowledge base inside a codebase or notes corpus so agents can navigate large context through indexes, summaries, and decision records.",
+    "developerName": "Oleg Gaidukov",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/olegvg/kb-for-agents",
+    "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "defaultPrompt": [
+      "Build a KB for this codebase.",
+      "Query the project knowledge base.",
+      "Check whether the KB is stale."
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}
